@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Instagram</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Import fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- link css -->
+    <link href="assets/index.css" rel="stylesheet" />
+
+    <!-- link js -->
+    <script src="javascript/index.js" defer></script>
+    <script src="javascript/stories.js" defer></script>
+    <script src="javascript/posts.js" defer></script>
+  </head>
+
+  <body>
+    <!-- Header -->
+    <header>
+      <div class="header-container">
+        <!-- Header Logo / Content Filter Trigger -->
+        <h1
+          aria-expanded="false"
+          aria-controls="content-filter"
+          aria-label="Open Content Filter"
+          id="instagram-logo"
+        >
+          <img src="assets/svg/logo-text.svg" alt="" />
+          <img src="assets/svg/chevron-down.svg" alt="" />
+        </h1>
+
+        <!-- Content Filter Dropdown -->
+        <menu id="content-filter" aria-label="Select Content Filter">
+          <button class="dropdown-btn top" aria-label="Following">
+            Following
+            <img src="assets/svg/following.svg" alt="" />
+          </button>
+          <button class="dropdown-btn bottom" aria-label="Favorites">
+            Favorites
+            <img src="assets/svg/favorites.svg" alt="" />
+          </button>
+        </menu>
+
+        <!-- Overlay -->
+        <div id="overlay"></div>
+
+        <!-- Header Buttons -->
+        <div id="header-btns-container">
+          <!-- Post Trigger -->
+          <div id="post-trigger">
+            <img src="assets/svg/post-trigger.svg" alt="" />
+          </div>
+
+          <!-- Post Dropdown-->
+          <menu id="post-menu" aria-label="Select Content Filter">
+            <button class="dropdown-btn top" aria-label="Post">
+              Post
+              <img src="assets/svg/post.svg" alt="" />
+            </button>
+            <button class="dropdown-btn bottom" aria-label="Story">
+              Story
+              <img src="assets/svg/story.svg" alt="" />
+            </button>
+          </menu>
+
+          <div>
+            <img src="assets/svg/notifications.svg" alt="" />
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="main-content-container">
+        <!-- Stories -->
+        <section id="stories-section">
+          <div class="story-container">
+            <div class="story-img-container seen">
+              <img
+                class="story-img"
+                src="https://placehold.co/400"
+                alt="story image"
+              />
+            </div>
+            <h1 class="story-name">Your story</h1>
+          </div>
+        </section>
+
+        <!-- Posts -->
+        <section id="posts-section">
+          <div id="loading">loading...</div>
+        </section>
+      </div>
+
+      <aside>
+        <div class="aside-item">
+          <div class="aside-user-details">
+            <h1 class="aside-img-container">
+              <img src="https://placehold.co/400" alt="" class="aside-img" />
+            </h1>
+            <div>
+              <h2>Display Name</h2>
+              <h3 class="text-muted">Username</h3>
+            </div>
+          </div>
+          <div class="aside-btn">Switch</div>
+        </div>
+        <div class="aside-separator">
+          <h1 class="text-muted">Suggested for you</h1>
+          <h1>See All</h1>
+        </div>
+        <div class="aside-content">
+          <div class="aside-item">
+            <div class="aside-user-details">
+              <h1 class="aside-img-container">
+                <img src="https://placehold.co/400" alt="" class="aside-img" />
+              </h1>
+              <div>
+                <h2>Display Name</h2>
+                <h3 class="text-muted">Username</h3>
+              </div>
+            </div>
+            <div class="aside-btn">follow</div>
+          </div>
+          <div class="aside-item">
+            <div class="aside-user-details">
+              <h1 class="aside-img-container">
+                <img src="https://placehold.co/400" alt="" class="aside-img" />
+              </h1>
+              <div>
+                <h2>Display Name</h2>
+                <h3 class="text-muted">Username</h3>
+              </div>
+            </div>
+            <div class="aside-btn">follow</div>
+          </div>
+          <div class="aside-item">
+            <div class="aside-user-details">
+              <h1 class="aside-img-container">
+                <img src="https://placehold.co/400" alt="" class="aside-img" />
+              </h1>
+              <div>
+                <h2>Display Name</h2>
+                <h3 class="text-muted">Username</h3>
+              </div>
+            </div>
+            <div class="aside-btn">follow</div>
+          </div>
+          <div class="aside-item">
+            <div class="aside-user-details">
+              <h1 class="aside-img-container">
+                <img src="https://placehold.co/400" alt="" class="aside-img" />
+              </h1>
+              <div>
+                <h2>Display Name</h2>
+                <h3 class="text-muted">Username</h3>
+              </div>
+            </div>
+            <div class="aside-btn">follow</div>
+          </div>
+          <div class="aside-item">
+            <div class="aside-user-details">
+              <h1 class="aside-img-container">
+                <img src="https://placehold.co/400" alt="" class="aside-img" />
+              </h1>
+              <div>
+                <h2>Display Name</h2>
+                <h3 class="text-muted">Username</h3>
+              </div>
+            </div>
+            <div class="aside-btn">follow</div>
+          </div>
+        </div>
+      </aside>
+    </main>
+
+    <!-- Navigation -->
+    <nav id="navigation">
+      <!-- Brand Contianer -->
+      <div class="brand-contianer">
+        <h1 class="nav-link small-logo">
+          <img src="assets/svg/logo.svg" alt="" />
+        </h1>
+        <div class="full-logo">
+          <img src="assets/svg/logo-text.svg" alt="" />
+        </div>
+      </div>
+
+      <!-- Main Navigation -->
+      <div class="main-navigation">
+        <h1 class="nav-link">
+          <img src="assets/svg/home.svg" alt="" />
+          <div class="nav-link-text">Home</div>
+        </h1>
+        <h1 class="nav-link">
+          <img src="assets/svg/explore.svg" alt="" />
+          <div class="nav-link-text">Explore</div>
+        </h1>
+        <h1 class="nav-link">
+          <img src="assets/svg/reels.svg" alt="" />
+          <div class="nav-link-text">Reels</div>
+        </h1>
+
+        <h1 class="nav-link">
+          <img src="assets/svg/messenger.svg" alt="" />
+          <div class="nav-link-text">Messenger</div>
+        </h1>
+
+        <h1 class="nav-link sm-hidden">
+          <img src="assets/svg/notifications.svg" alt="" />
+          <div class="nav-link-text">Notifications</div>
+        </h1>
+
+        <h1 class="nav-link sm-hidden">
+          <img src="assets/svg/post-trigger.svg" alt="" />
+          <div class="nav-link-text">Post</div>
+        </h1>
+
+        <h1 class="nav-link">
+          <img src="assets/svg/profile.svg" alt="" />
+          <div class="nav-link-text">Profile</div>
+        </h1>
+      </div>
+
+      <!-- Extra Navigation -->
+      <div class="extra-navigation">
+        <h1 class="nav-link">
+          <img src="assets/svg/threads.svg" alt="" />
+          <div class="nav-link-text">Threads</div>
+        </h1>
+        <h1 class="nav-link">
+          <img src="assets/svg/settings.svg" alt="" />
+          <div class="nav-link-text">Settings</div>
+        </h1>
+      </div>
+    </nav>
+  </body>
+</html>
